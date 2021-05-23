@@ -15,14 +15,12 @@ function setup() {
     let y1 = random(sceneH);
     let y2 = random(sceneH);
     walls[i] = new Boundary(x1, y1, x2, y2);
+    squares[i] = new Square(x1, x2, 50);
   }
   walls.push(new Boundary(0, 0, sceneW, 0));
   walls.push(new Boundary(sceneW, 0, sceneW, sceneH));
   walls.push(new Boundary(sceneW, sceneH, 0, sceneH));
   walls.push(new Boundary(0, sceneH, 0, 0));
-
-  squares.push(new Square(100, 150, 50));
-  squares.push(new Square(300, 300, 50));
 
   for (let i = 0; i < squares.length; i++)
     for (let j = 0; j < 4; j++) {
