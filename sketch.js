@@ -8,7 +8,7 @@ const sceneW = 400;
 const sceneH = 400;
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(400, 400);
   for (let i = 0; i < 5; i++) {
     let x1 = random(sceneW);
     let x2 = random(sceneW);
